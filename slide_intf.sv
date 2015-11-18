@@ -5,7 +5,8 @@ input MISO;
 output a2d_SS_n, SCLK, MOSI;
 // A2D_intf - RRsequencer wires
 wire [11:0] res;
-wire [2:0] chnnl;
+reg [2:0] chnnl;
+reg strt_cnv;
 wire cnv_cmplt;
 // slide_intf outputs
 output reg [11:0] POT_LP, POT_B1, POT_B2, POT_B3, POT_HP, VOLUME;
